@@ -47,6 +47,8 @@ body {
 
 .navbar {
 	margin-bottom: 30px;
+	font-family: "Oswald Bold";
+	color: #294a70;
 }
 
 .card {
@@ -237,6 +239,7 @@ a.footer-link {
 
 .footer {
 	background: #fafafa;
+	border-top: 5px solid #ffab1f;
     padding: 2.5rem 0;
 }
 
@@ -270,11 +273,6 @@ a.copyright {
 
 .indicator {
 	position: relative;
-}
-
-.carousel-indicators {
-	position: relative;
-	justify-content: normal;
 }
 
 .card-body-carrousel {
@@ -474,6 +472,15 @@ p.content-category {
 	padding: 10px;
 }
 
+a.a-head {
+	color: #fff;
+}
+
+a.a-head:hover {
+	color: #ffab1f;
+	transition: 1.5s;
+}
+
 #search {
     float: right;
     margin-top: 9px;
@@ -522,10 +529,10 @@ li.nav-item-dropdown {
 
 ul.nav li:hover > ul.dropdown-menu {
     display: block;
-  }
+}
 
-  .dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
-  text-decoration: underline;
+ul.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+	text-decoration: none;
 }
 
 /*search box css start here*/
@@ -610,6 +617,10 @@ img.align-left{
     float: left;
     margin-right: 15px;
     margin-bottom: 15px;
+}
+
+article {
+	padding-bottom: 25px;
 }
 
 .section-content {
@@ -726,6 +737,247 @@ span.comments-link::before {
     display: inline-block;
     font-size: 16px;
     padding: 5px 15px;
-    border-radius: 2px;
+    border-radius: 5px;
     margin-bottom: 25px;
+}
+
+.widget-area {
+	clear: both;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h2.widget-title {
+	font-family: 'Oswald Regular';
+	background: #294a70 none repeat scroll 0 0;
+    border-bottom: 0 solid #ffab1f;
+    border-left: 5px solid #ffab1f;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 5px 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+h2.widget-title::after {
+	border-left: 9px solid rgba(0, 0, 0, 0);
+    border-right: 9px solid rgba(0, 0, 0, 0);
+    border-top: 9px solid #294a70;
+    bottom: -20px;
+    content: "";
+    display: block;
+    height: 21px;
+    left: 5%;
+    margin: 0 auto;
+    position: absolute;
+    width: 13px;
+    z-index: 9999;
+}
+
+ul.social-menu {
+	list-style: outside none none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li.widget-social {
+	display: block;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+a.link-social {
+	background-color: #eaeaea;
+    border: medium none;
+    display: inline-block;
+    height: 33px;
+    line-height: 1.7;
+    margin-right: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 33px;
+}
+
+a.link-fb::before {
+	color: #1f1f29;
+    content: "\f09a";
+    display: block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    line-height: 1.7;
+    padding: 5px;
+}
+
+a.link-twitter::before {
+	color: #1f1f29;
+    content: "\f099";
+    display: block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    line-height: 1.7;
+    padding: 5px;
+}
+
+a.link-ig::before {
+	color: #1f1f29;
+    content: "\f16d";
+    display: block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    line-height: 1.7;
+    padding: 5px;
+}
+
+a.link-youtube::before {
+	color: #1f1f29;
+    content: "\f167";
+    display: block;
+    font-family: FontAwesome;
+    font-weight: normal;
+    line-height: 1.7;
+    padding: 5px;
+}
+
+img.img-widget {
+	width: 100%;
+	height: auto;
+}
+
+ul.menu-instansi {
+	list-style: outside none none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li.widget-instansi {
+	padding: 2px 0 2px 25px;
+    position: relative;
+}
+
+a.link-instansi{
+	font-family: 'Oswald Light';
+}
+
+a.link-instansi::before {
+	color: #ffab1f;
+    content: "\f101";
+    display: inline-block;
+    font-family: fontawesome;
+    font-size: 15px;
+    left: 0;
+    margin-left: 5px;
+    margin-right: 8px;
+    position: absolute;
+}
+
+ul.sub-menu {
+	list-style: outside none none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h3.widget-title {
+	font-size: 17px;
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+.carousel-testi {
+	margin: 50px auto;
+    padding: 0 70px;
+}
+
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 250px;
+	height: 150px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #294a70;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+p.fakultas {
+	font-style: italic;
+	font-size: 16px;
+	margin-top: -10px;
+}
+
+p.p-testi {
+	text-align: center;
+	margin-top: 50px;
+}
+
+footer.site-footer {
+	background-color: #15305b;
+    clear: both;
+    color: #ffffff;
+    padding: 15px 0;
+}
+
+.copyright {
+	margin-bottom: 5px;
+    margin-top: 5px;
 }
